@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>Chen-yao Wen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./css/w3.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+	<body>
+		<div id = "main" class="w3-display-topmiddle w3-mobile wrap-outer">
+			<div id = "header" class = "w3-container w3-center">
+				<div id = "top" class = "w3-container w3-center">
+					<h1>Chen-yao Wen</h1>
+				</div>
+				<div id = "box" class = "w3-container w3-center">
+					<h2 align="center">#</h2>
+				</div>
+				<div id = "classtop" class = "w3-mobile w3-center theme-color">
+					<a href="#" class="w3-bar-item w3-button" >Home</a>
+					<a href="./research.html" class="w3-bar-item w3-button" >Research</a>
+					<a href="./contact.html" class="w3-bar-item w3-button" >Contact</a>
+				</div>
+			</div>
+			<div id = "classer">
+				<div id = "home">
+					<div class='w3-content w3-display-container w3-center'>
+						<!--slides1-->
+				        <div class="w3-display-container mySlides slide-fading ">
+				          <img src="./images/classer/ultrasound.png" style="width:100%">
+					        <div class="w3-display-bottomright w3-container w3-padding-16 grey_80">
+					            <a href="./research.html#p2">Blood flow measurements</a>
+					        </div>
+				        </div>
+				        <!--slides2-->
+				        <div class="w3-display-container mySlides slide-fading ">
+				          <img src="./images/classer/photoacoustic.png" style="width:100%">
+					        <div class="w3-display-bottomright w3-container w3-padding-16 grey_80">
+					          	<a href="./research.html#p1">Acoustic-resolution photoacoustic microscopy</a>
+					        </div>
+				        </div>
+				        <!--slides3-->
+				        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				    </div>
+
+					    <script>
+					        var slideIndex = 1;
+					        showDivs(slideIndex);
+					        carousel();
+
+					        function plusDivs(n) {
+					          showDivs(slideIndex += n);
+					        }
+
+					        function showDivs(n) {
+					          var i;
+					          var x = document.getElementsByClassName("mySlides");
+					          if (n > x.length) {slideIndex = 1}    
+					          if (n < 1) {slideIndex = x.length}
+					          for (i = 0; i < x.length; i++) {
+					            x[i].style.display = "none";  
+					          }
+					          x[slideIndex-1].style.display = "block"; 
+					        }
+					        
+					        function carousel() {
+					          var i;
+					          var x = document.getElementsByClassName("mySlides");
+					          for (i = 0; i < x.length; i++) {
+					            x[i].style.display = "none"; 
+					          }
+					          slideIndex++;
+					          if (slideIndex > x.length) {slideIndex = 1} 
+					          x[slideIndex-1].style.display = "block"; 
+					          setTimeout(carousel, 10000); // Change image every 2 seconds
+					        }
+	      				</script>
+				<div id = "introduction" class="w3-container w3-white">
+					<h2>Introduction</h2>	
+					<p>Studying in Biomedical Engineering, Peking University.</br>
+					Research field inculding Diagnostic Ultrasound Imaging, Ultrasonic Blood Flow Measurements, Photoacoustic Microscopy, Photoacoustic Computed Tomography. </p>
+				</div>
+			    <div  id = "education" class="w3-container w3-white">
+			    	<div id = "table1">
+			    		<h2>Education</h2>
+				    		<table class = "w3-table">
+						        <tr>
+						           <th>Year</th>
+						           <th>Insitution</th>
+						           <th>Degree<th>
+						        </tr>
+						        <tr>
+						            <td>2013-2017</td>
+						            <td>Cheng Kung University</td>
+						            <td>B.Tech</td>
+						        </tr>
+						        <tr>
+						            <td>2017-</td>
+						            <td>Peking University</td>
+						            <td>Master candidate(Now)</td>
+						        </tr>
+						    </table>
+			    	</div>
+				</div>
+		</div>
+    </body>
+</html>
