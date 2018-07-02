@@ -60,6 +60,7 @@ header, footer {
                 -webkit-transform: translate(100px);   
             }    
         }   
+        
         .loading span:nth-child(1){   
             -webkit-animation-delay:0.13s;   
         }   
