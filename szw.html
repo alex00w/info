@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>皮猴</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="./css/w3.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+	<body>
+		<div id = "main" class="w3-display-topmiddle w3-mobile wrap-outer">
+			<div id = "header" class = "w3-container w3-center">
+				<div id = "top" class = "w3-container w3-center">
+					<p><h1>" 孙子文 "</h1></p>
+				</div>
+			</div>
+			<div id = "classer">
+				<div id = "home">
+				<div id = "introduction" class="w3-container w3-white">
+					<h2>简介</h2>	
+					<p>宝宝奶昔.</br>
+					睡觉会打呼，喜欢敲别人的头.</p>
+				</div>
+			    <div  id = "education" class="w3-container w3-white">
+			    	<div id = "table1">
+			    		<h2>作息</h2>
+				    		<table class = "w3-table">
+						        <tr>
+									<th>时间</th>
+									<th>哪里</th>
+									<th>干嘛</th>
+									<th>笑死</th>
+						        </tr>
+						        <tr>
+						            <td>平日 10-22</td>
+						            <td>公司</td>
+						            <td>上班</td>
+									<td><input type="button" value="看我上班" id="bt1"/></td>
+						        </tr>
+                                <tr>
+						            <td>平日 24-10</td>
+						            <td>家里</td>
+						            <td>狂吃零食</td>
+									<td><input type="button" value="我吃零食" id="bt2"/></td>
+						        </tr>
+                                <tr>
+						            <td>平日 23-24</td>
+						            <td>家里</td>
+						            <td>拉屎</td>
+									<td><input type="button" value="我拉xiii" id="bt3"/></td>
+						        </tr>
+						        <tr>
+						            <td>周末</td>
+						            <td>家里</td>
+						            <td>睡觉</td>
+									<td><input type="button" value="都睡不醒" id="bt4"/></td>
+						        </tr>
+						    </table>
+			    	</div>
+				</div>
+				<div  id = "education" class="w3-container w3-white">
+					<div id = "table1">
+						<h2>左右护法</h2>
+			    	</div>
+				<input type="button" value="左" id="bt10"/><input type="button" value="右" id="bt01"/>	
+			    </div>
+			    <div  id = "education" class="w3-container w3-white">
+					<div id = "table1">
+						<h2>看联系方式</h2>
+			    	</div>
+				<button onclick="showMessage()">点我看联系方式</button>
+			    </div>
+			    
+		</div>
+		<div id = "lastupdate" class="w3-container w3-center " >
+			<img src="" alt="" id="im"/>
+		</div>
+<script>
+    var bt1Object = document.getElementById("bt1");
+    var bt2Object = document.getElementById("bt2");
+    var bt3Object = document.getElementById("bt3");
+    var bt4Object = document.getElementById("bt4");
+    var bt01Object = document.getElementById("bt01");
+    var bt10Object = document.getElementById("bt10");
+
+    bt1Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/working.png";
+        imObject.width = "600";
+        imObject.height = "800";
+    };
+        bt2Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/eating.png";
+        imObject.width = "600";
+        imObject.height = "800";
+    };
+        bt3Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/pooing.png";
+        imObject.width = "400";
+        imObject.height = "800";
+    };
+        bt4Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/sleeping.png";
+        imObject.width = "600";
+        imObject.height = "800";
+    };
+            bt01Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/ph1.png";
+        imObject.width = "600";
+        imObject.height = "800";
+    };
+            bt10Object.onclick = function () {
+        var imObject = document.getElementById("im");
+        imObject.src = "images/ph2.png";
+        imObject.width = "600";
+        imObject.height = "800";
+    };
+    function showMessage(){
+        alert("哈哈哈!!!没有联系方式, 我要睡觉, 晚安!掰掰!");
+    };
+</script>
+    </body>
+</html>
